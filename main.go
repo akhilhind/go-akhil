@@ -8,4 +8,5 @@ import (
 
 func main() {
 	fmt.Println(quote.Go())
+	fmt.Println(Calculator.add(2, 3))
 }

@@ -1,4 +1,4 @@
-module github.com/akhilhind/go-akhil
+module go-akhil
 
 go 1.23.1
 

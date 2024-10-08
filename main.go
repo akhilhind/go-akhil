@@ -1,12 +1,12 @@
-package main
+// package main
 
-import (
-	"fmt"
+// import (
+// 	"fmt"
 
-	"rsc.io/quote"
-)
+// 	"rsc.io/quote"
+// )
 
-func main() {
-	fmt.Println(quote.Go())
-	fmt.Println(Calculator.add(2, 3))
-}
+// func main() {
+// 	fmt.Println(quote.Go())
+// 	fmt.Println(Calculator.add(2, 3))
+// }

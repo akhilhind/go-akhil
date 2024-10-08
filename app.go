@@ -21,4 +21,8 @@ func main() {
 	for index, value := range names {
 		fmt.Printf("Hi there, this name '%v' is at index '%v'.\n", value, index)
 	}
+
+	fmt.Println(add(2, 5))
+	fmt.Println(sub(2, 5))
+	fmt.Println(abs(2, 5))
 }

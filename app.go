@@ -25,4 +25,8 @@ func main() {
 	fmt.Println(add(2, 5))
 	fmt.Println(sub(2, 5))
 	fmt.Println(abs(2, 5))
+
+	for i := 0; i < len(name); i++ {
+		print(name[i])
+	}
 }

@@ -1,8 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sync"
+	"time"
+)
+
+func something(wg *sync.WaitGroup) {
+	defer wg.Done()
+	time.Sleep(10)
+	fmt.Println("Later")
+}
 
 func main() {
+	var wg sync.WaitGroup
 	var name string = "Akhil"
 	lastname := "Singh"
 	fmt.Print(name)
@@ -29,4 +40,12 @@ func main() {
 	for i := 0; i < len(name); i++ {
 		print(name[i])
 	}
+
+	fmt.Println()
+
+	wg.Add(1)
+
+	go something(&wg)
+	fmt.Println("Hello")
+	wg.Wait()
 }
